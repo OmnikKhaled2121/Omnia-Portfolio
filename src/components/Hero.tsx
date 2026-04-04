@@ -1,4 +1,4 @@
-import { FiMail, FiDownload } from 'react-icons/fi'
+import { FiMail, FiFileText } from 'react-icons/fi'
 import { personal } from '../data'
 
 export default function Hero() {
@@ -23,11 +23,12 @@ export default function Hero() {
           <FiMail size={16} /> Contact Me
         </a>
         <a
-          href="/resume.pdf"
+          href="https://flowcv.com/resume/v9o5fasep1"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-fg-heading transition-colors hover:border-accent hover:text-accent no-underline"
         >
-          <FiDownload size={16} /> Download Resume
+          <FiFileText size={16} /> View Resume
         </a>
       </div>
     </section>
