@@ -8,8 +8,8 @@ This file is the **single source of truth** for all portfolio content. When upda
 - **Email:** omniakhaled418@gmail.com
 - **Phone:** 01018445662
 - **Location:** Egypt
-- **LinkedIn:** (add URL)
-- **GitHub:** (add URL)
+- **LinkedIn:** https://www.linkedin.com/in/omnia-khaled-568774171/
+- **GitHub:** https://github.com/OmnikKhaled2121
 
 ## Profile
 Experienced Frontend Developer specializing in building scalable, high-performance web applications in enterprise and financial services environments. Skilled in React, Next.js, TypeScript, and modern frontend architecture, with a strong background in performance optimization, automated testing, and Agile methodologies. Passionate about delivering seamless user experiences and driving digital transformation.

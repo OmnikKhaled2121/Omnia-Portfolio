@@ -4,8 +4,8 @@ export const personal = {
   email: 'omniakhaled418@gmail.com',
   phone: '01018445662',
   location: 'Egypt',
-  linkedin: 'https://linkedin.com', // TODO: add real URL
-  github: 'https://github.com', // TODO: add real URL
+  linkedin: 'https://www.linkedin.com/in/omnia-khaled-568774171/',
+  github: 'https://github.com/OmnikKhaled2121',
 }
 
 export const profile =
@@ -85,14 +85,76 @@ export const projects = [
 ]
 
 export const skillCategories = [
-  { label: 'Frontend Development', skills: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'JSX'] },
-  { label: 'Frameworks', skills: ['React.js', 'Next.js'] },
-  { label: 'UI & Styling', skills: ['Tailwind CSS', 'Bootstrap', 'Material UI', 'Ant Design', 'ShadCN UI'] },
-  { label: 'State Management', skills: ['Redux', 'RTK Query', 'React Query', 'Zustand'] },
-  { label: 'Testing', skills: ['Cypress (E2E)', 'React Testing Library', 'Unit & Integration Testing'] },
-  { label: 'Tools & Cloud', skills: ['Git', 'GitHub', 'Postman', 'Microsoft Azure', 'Azure Artifacts'] },
-  { label: 'Backend Basics', skills: ['Node.js', 'MySQL', 'REST APIs'] },
-  { label: 'CS Fundamentals', skills: ['Data Structures', 'OOP', 'UML Diagrams'] },
+  {
+    label: 'Frontend Development',
+    skills: [
+      { name: 'JavaScript (ES6+)', icon: 'SiJavascript' },
+      { name: 'TypeScript', icon: 'SiTypescript' },
+      { name: 'HTML5', icon: 'SiHtml5' },
+      { name: 'CSS3', icon: 'SiCss3' },
+      { name: 'JSX', icon: 'FaReact' },
+    ],
+  },
+  {
+    label: 'Frameworks',
+    skills: [
+      { name: 'React.js', icon: 'FaReact' },
+      { name: 'Next.js', icon: 'SiNextdotjs' },
+    ],
+  },
+  {
+    label: 'UI & Styling',
+    skills: [
+      { name: 'Tailwind CSS', icon: 'SiTailwindcss' },
+      { name: 'Bootstrap', icon: 'SiBootstrap' },
+      { name: 'Material UI', icon: 'SiMui' },
+      { name: 'Ant Design', icon: 'SiAntdesign' },
+      { name: 'ShadCN UI', icon: 'SiShadcnui' },
+    ],
+  },
+  {
+    label: 'State Management',
+    skills: [
+      { name: 'Redux', icon: 'SiRedux' },
+      { name: 'RTK Query', icon: 'SiRedux' },
+      { name: 'React Query', icon: 'SiReactquery' },
+      { name: 'Zustand', icon: 'SiReact' },
+    ],
+  },
+  {
+    label: 'Testing',
+    skills: [
+      { name: 'Cypress (E2E)', icon: 'SiCypress' },
+      { name: 'React Testing Library', icon: 'SiTestinglibrary' },
+      { name: 'Unit & Integration Testing', icon: 'MdScience' },
+    ],
+  },
+  {
+    label: 'Tools & Cloud',
+    skills: [
+      { name: 'Git', icon: 'SiGit' },
+      { name: 'GitHub', icon: 'SiGithub' },
+      { name: 'Postman', icon: 'SiPostman' },
+      { name: 'Microsoft Azure', icon: 'VscAzure' },
+      { name: 'Azure Artifacts', icon: 'VscAzure' },
+      { name: 'React DevTools', icon: 'FaReact' },
+    ],
+  },
+  {
+    label: 'Backend Basics',
+    skills: [
+      { name: 'MySQL', icon: 'SiMysql' },
+      { name: 'REST APIs', icon: 'TbApi' },
+    ],
+  },
+  {
+    label: 'CS Fundamentals',
+    skills: [
+      { name: 'Data Structures', icon: 'TbBinaryTree' },
+      { name: 'OOP', icon: 'MdCode' },
+      { name: 'UML Diagrams', icon: 'MdAccountTree' },
+    ],
+  },
 ]
 
 export const education = {
