@@ -9,7 +9,7 @@ export const personal = {
 }
 
 export const profile =
-  'Experienced Frontend Developer specializing in building scalable, high-performance web applications in enterprise and financial services environments. Skilled in React, Next.js, TypeScript, and modern frontend architecture, with a strong background in performance optimization, automated testing, and Agile methodologies. Passionate about delivering seamless user experiences and driving digital transformation.'
+  'Frontend Developer with 4 years of experience building scalable, high-performance web applications in enterprise and financial services environments. Skilled in React, Next.js, TypeScript, and modern frontend architecture, with a strong background in performance optimization, automated testing, and Agile methodologies. Passionate about delivering seamless user experiences and driving digital transformation.'
 
 export const jobs = [
   {
