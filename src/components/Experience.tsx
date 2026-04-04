@@ -1,3 +1,4 @@
+import { FiExternalLink } from 'react-icons/fi'
 import { jobs } from '../data'
 
 export default function Experience() {
@@ -14,10 +15,11 @@ export default function Experience() {
               <span className="text-sm font-mono text-accent">{job.period}</span>
               <span className="text-sm text-fg-muted">· {job.location}</span>
             </div>
-            <h4 className="text-lg font-semibold text-fg-heading">
+            <h4 className="flex items-center gap-2 text-lg font-semibold text-fg-heading">
               {'companyUrl' in job ? (
-                <a href={job.companyUrl as string} target="_blank" rel="noopener noreferrer" className="hover:text-accent  transition-colors">
+                <a href={job.companyUrl as string} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-accent transition-colors">
                   {job.company}
+                  <FiExternalLink size={14} />
                 </a>
               ) : job.company}
             </h4>
@@ -28,8 +30,9 @@ export default function Experience() {
               <div className="mb-3 rounded-lg border border-border bg-bg-card p-3">
                 <p className="text-sm font-semibold text-fg-heading">
                   {'url' in job.project ? (
-                    <a href={job.project.url as string} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                    <a href={job.project.url as string} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-accent transition-colors">
                       {job.project.name}
+                      <FiExternalLink size={13} />
                     </a>
                   ) : job.project.name}
                 </p>

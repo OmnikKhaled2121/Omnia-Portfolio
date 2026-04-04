@@ -36,7 +36,7 @@ export const jobs = [
     ],
   },
   {
-    company: 'Huawei Technologies',
+    company: 'Huawei',
     role: 'Software Engineer',
     period: 'Sep 2022 – Jul 2024',
     location: 'Egypt',
