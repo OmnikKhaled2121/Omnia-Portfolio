@@ -28,7 +28,7 @@ export const jobs = [
     },
     points: [
       'Contributed to the frontend development and release of a major digital transformation feature for financial services.',
-      'Integrated third-party financial services including IBKR, GTN, Sukuk platforms, TASI, Nomu, and Benzinga.',
+      'Implemented digital onboarding, real-time market data, and cross-market portfolio management across Saudi and international markets supporting global trading, IPO subscriptions, and real-time portfolio tracking.',
       'Initiated a shared Azure Artifacts package to centralize reusable components across SuperWeb and SuperApp.',
       'Optimized performance using memoization, lazy loading, and code splitting, improving Lighthouse score from ~40% to ~75%.',
       'Expanded automated testing coverage using Cypress and React Testing Library.',
@@ -69,8 +69,8 @@ export const projects = [
       'Developed the public website using Next.js with server-side rendering (SSR) for SEO optimization.',
     ],
     tech: ['React', 'Next.js', 'ShadCN UI', 'RTK Query', 'Tailwind CSS', 'Zod'],
-    github: 'https://github.com', // TODO: add real URL
-    live: '', // TODO: add live URL if available
+    github: '',
+    live: 'https://qalb-institute.com/en/home',
   },
   {
     title: 'ESTKDAM',
@@ -81,8 +81,8 @@ export const projects = [
       'Implemented unit and integration testing, and validated APIs using Postman.',
     ],
     tech: ['React', 'Material UI', 'Laravel', 'REST APIs', 'Postman'],
-    github: 'https://github.com', // TODO: add real URL
-    live: '', // TODO: add live URL if available
+    github: '',
+    live: 'https://omnikkhaled2121.github.io/Estkdam/?/EstkdamRequest',
   },
 ]
 
