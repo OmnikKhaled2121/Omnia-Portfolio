@@ -13,7 +13,14 @@ export default function Projects() {
             key={i}
             className="group rounded-xl border border-border bg-bg-card p-6 transition-all hover:border-accent hover:shadow-lg"
           >
-            <h4 className="mb-1 text-lg font-semibold text-fg-heading">{p.title}</h4>
+            <h4 className="mb-1 flex items-center gap-2 text-lg font-semibold text-fg-heading">
+              {p.title}
+              {p.live && (
+                <a href={p.live} target="_blank" rel="noreferrer" className="text-fg-muted transition-colors hover:text-accent">
+                  <FiExternalLink size={16} />
+                </a>
+              )}
+            </h4>
             <p className="mb-4 text-sm font-medium text-accent">{p.subtitle}</p>
 
             <ul className="mb-4 space-y-2 text-sm text-fg leading-relaxed">
@@ -33,18 +40,13 @@ export default function Projects() {
               ))}
             </div>
 
-            <div className="flex gap-4">
-              {p.github && (
+            {p.github && (
+              <div className="flex gap-4">
                 <a href={p.github} target="_blank" rel="noreferrer" className="text-fg-muted transition-colors hover:text-accent">
                   <FiGithub size={18} />
                 </a>
-              )}
-              {p.live && (
-                <a href={p.live} target="_blank" rel="noreferrer" className="text-fg-muted transition-colors hover:text-accent">
-                  <FiExternalLink size={18} />
-                </a>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
