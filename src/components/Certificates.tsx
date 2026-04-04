@@ -1,12 +1,5 @@
 import { FiCheckCircle } from 'react-icons/fi'
-
-const certs = [
-  { name: 'Intel Ideation Workshop', org: 'Intel', year: '2019' },
-  { name: 'Potential Startup Course & Training', org: 'InnovEgypt University', year: '2019' },
-  { name: 'Fundamentals of Community Organizing', org: 'Raod2Lead', year: '2021' },
-  { name: 'IEEE FSB Secretary', org: 'IEEE SSR in Egypt', year: '2021' },
-  { name: 'Entrepreneurship Program', org: 'IEEE VEP', year: '2022' },
-]
+import { certificates } from '../data'
 
 export default function Certificates() {
   return (
@@ -14,7 +7,7 @@ export default function Certificates() {
       <h2 className="mb-2 text-sm font-medium tracking-wider text-accent uppercase">Certificates</h2>
       <h3 className="mb-8 text-3xl font-bold text-fg-heading">Achievements</h3>
       <div className="space-y-4">
-        {certs.map((c, i) => (
+        {certificates.map((c, i) => (
           <div key={i} className="flex items-start gap-3 rounded-lg border border-border p-4 transition-colors hover:border-accent">
             <FiCheckCircle size={18} className="mt-0.5 shrink-0 text-accent" />
             <div>

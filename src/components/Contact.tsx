@@ -1,11 +1,12 @@
 import { FiMail, FiPhone, FiGithub, FiLinkedin, FiMapPin } from 'react-icons/fi'
+import { personal } from '../data'
 
 const links = [
-  { icon: <FiMail size={18} />, label: 'omniakhaled418@gmail.com', href: 'mailto:omniakhaled418@gmail.com' },
-  { icon: <FiPhone size={18} />, label: '01018445662', href: 'tel:+2001018445662' },
-  { icon: <FiLinkedin size={18} />, label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: <FiGithub size={18} />, label: 'GitHub', href: 'https://github.com' },
-  { icon: <FiMapPin size={18} />, label: 'Egypt', href: '#' },
+  { icon: <FiMail size={18} />, label: personal.email, href: `mailto:${personal.email}` },
+  { icon: <FiPhone size={18} />, label: personal.phone, href: `tel:+20${personal.phone}` },
+  { icon: <FiLinkedin size={18} />, label: 'LinkedIn', href: personal.linkedin },
+  { icon: <FiGithub size={18} />, label: 'GitHub', href: personal.github },
+  { icon: <FiMapPin size={18} />, label: personal.location, href: '#' },
 ]
 
 export default function Contact() {
@@ -30,7 +31,7 @@ export default function Contact() {
       </div>
 
       <footer className="mt-20 border-t border-border pt-8 text-center text-sm text-fg-muted">
-        <p>&copy; {new Date().getFullYear()} Omnia Khaled. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} {personal.name}. All rights reserved.</p>
       </footer>
     </section>
   )

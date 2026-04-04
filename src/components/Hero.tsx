@@ -1,18 +1,19 @@
 import { FiMail, FiDownload } from 'react-icons/fi'
+import { personal } from '../data'
 
 export default function Hero() {
   return (
     <section className="flex min-h-[70vh] flex-col items-center justify-center px-6 py-20 text-center">
       <p className="mb-4 text-sm font-medium tracking-wider text-accent uppercase">Welcome to my portfolio</p>
       <h1 className="mb-4 text-5xl font-bold tracking-tight text-fg-heading sm:text-6xl">
-        Omnia Khaled
+        {personal.name}
       </h1>
       <p className="cursor-blink mb-8 text-xl text-fg-muted sm:text-2xl">
-        Software Engineer
+        {personal.title}
       </p>
       <p className="mx-auto mb-10 max-w-xl text-fg-muted leading-relaxed">
-        Frontend developer with 3+ years of experience building performant web applications
-        at companies like Huawei and Al Rajhi Capital. Passionate about clean code and great user experiences.
+        Experienced Frontend Developer specializing in building scalable, high-performance
+        web applications in enterprise and financial services environments.
       </p>
       <div className="flex flex-wrap justify-center gap-4">
         <a

@@ -1,32 +1,4 @@
-const jobs = [
-  {
-    company: 'Ejada | Al Rajhi Capital',
-    role: 'Software Engineer',
-    period: 'Aug 2024 – Present',
-    location: 'Egypt',
-    points: [
-      'Part of the frontend development and successful release of a new digital feature aimed at computerizing Al Rajhi Capital financial services.',
-      'Improved React application performance by optimizing rendering patterns (memoization, lazy loading, bundle splitting), reducing load time.',
-      'Collaborated with backend/API teams to integrate and test new service endpoints, ensuring data accuracy and UI consistency.',
-      'Extended Cypress and React Testing Library coverage for trading and investment flows.',
-      'Provided peer code reviews and technical mentorship on React best practices.',
-    ],
-  },
-  {
-    company: 'Huawei',
-    role: 'Software Engineer',
-    period: 'Sep 2022 – Jul 2024',
-    location: 'Egypt',
-    points: [
-      'Developed 20+ various NOC projects using ReactJs, JavaScript, HTML, and CSS.',
-      'Integrated with GIS Maps Open Layer (JavaScript third-party module).',
-      'Implemented Backend services and improved performance with OOP and Data Structures.',
-      'Solved live production issues and security issues.',
-      'Customized cloud web service components and advocated Low Code OutSystems development.',
-      'Unit and integration testing with stakeholder collaboration.',
-    ],
-  },
-]
+import { jobs } from '../data'
 
 export default function Experience() {
   return (
@@ -43,7 +15,18 @@ export default function Experience() {
               <span className="text-sm text-fg-muted">· {job.location}</span>
             </div>
             <h4 className="text-lg font-semibold text-fg-heading">{job.company}</h4>
-            <p className="mb-3 text-sm text-fg-muted italic">{job.role}</p>
+            <p className="mb-1 text-sm text-fg-muted italic">{job.role}</p>
+            <p className="mb-3 text-sm text-fg">{job.description}</p>
+
+            {job.project.name && (
+              <div className="mb-3 rounded-lg border border-border bg-bg-card p-3">
+                <p className="text-sm font-semibold text-fg-heading">{job.project.name}</p>
+                {job.project.summary && (
+                  <p className="text-sm text-fg-muted">{job.project.summary}</p>
+                )}
+              </div>
+            )}
+
             <ul className="space-y-2 text-sm text-fg leading-relaxed">
               {job.points.map((p, j) => (
                 <li key={j} className="flex gap-2">

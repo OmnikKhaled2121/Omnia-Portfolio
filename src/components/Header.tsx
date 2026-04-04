@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi'
+import { personal } from '../data'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -29,7 +30,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
         <a href="#" className="text-lg font-semibold text-fg-heading no-underline">
-          OK<span className="text-accent">.</span>
+          {personal.name.split(' ')[0]}<span className="text-accent">.</span>
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">

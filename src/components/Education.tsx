@@ -1,4 +1,5 @@
 import { FiAward } from 'react-icons/fi'
+import { education } from '../data'
 
 export default function Education() {
   return (
@@ -9,22 +10,21 @@ export default function Education() {
       <div className="rounded-xl border border-border bg-bg-card p-6">
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div>
-            <h4 className="text-lg font-semibold text-fg-heading">Bachelor's in Computer Science</h4>
-            <p className="text-fg-muted">Fayoum University</p>
+            <h4 className="text-lg font-semibold text-fg-heading">{education.degree}</h4>
+            <p className="text-fg-muted">{education.university}</p>
           </div>
-          <span className="font-mono text-sm text-accent">2018 – 2022</span>
+          <span className="font-mono text-sm text-accent">{education.period}</span>
         </div>
 
         <div className="mt-4 rounded-lg border border-border bg-bg p-4">
           <div className="mb-1 flex items-center gap-2 text-sm font-medium text-fg-heading">
             <FiAward size={16} className="text-accent" />
-            Graduation Project: Shoppingo (Smart Shopping Cart)
+            Graduation Project: {education.gradProject.name}
           </div>
           <p className="text-sm text-fg-muted leading-relaxed">
-            Embedded system connected with administrator website, Flutter user experience
-            attached with data mining techniques to analyze the stored data.
+            {education.gradProject.description}
           </p>
-          <p className="mt-2 text-sm font-medium text-accent">Grade: Excellent — 98%</p>
+          <p className="mt-2 text-sm font-medium text-accent">{education.gradProject.grade}</p>
         </div>
       </div>
     </section>
