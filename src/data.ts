@@ -14,6 +14,7 @@ export const profile =
 export const jobs = [
   {
     company: 'Ejada | Al Rajhi Capital',
+    companyUrl: 'https://www.ejada.com/',
     role: 'Frontend Developer – React.js',
     period: 'Aug 2024 – Present',
     location: 'Egypt',
@@ -21,8 +22,9 @@ export const jobs = [
       'Ejada is a leading technology solutions provider in the MENA region, serving AlRajhi Capital\'s digital financial platforms.',
     project: {
       name: 'SuperWeb (React.js)',
+      url: 'https://web.alrajhi-capital.sa/login-oms',
       summary:
-        'AlRajhi Capital\'s online trading and investment platform providing access to Saudi and international equity markets, Sukuk, and real-time market data.',
+        'A comprehensive digital investment platform by AlRajhi Capital, built to deliver end-to-end financial and brokerage services. SuperWeb unifies trading tools, portfolio management, and multiple financial products — from Saudi and international equity markets to Sukuk — into a single, seamless experience that simplifies investing for every user.',
     },
     points: [
       'Contributed to the frontend development and release of a major digital transformation feature for financial services.',

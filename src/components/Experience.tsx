@@ -14,13 +14,25 @@ export default function Experience() {
               <span className="text-sm font-mono text-accent">{job.period}</span>
               <span className="text-sm text-fg-muted">· {job.location}</span>
             </div>
-            <h4 className="text-lg font-semibold text-fg-heading">{job.company}</h4>
+            <h4 className="text-lg font-semibold text-fg-heading">
+              {'companyUrl' in job ? (
+                <a href={job.companyUrl as string} target="_blank" rel="noopener noreferrer" className="hover:text-accent  transition-colors">
+                  {job.company}
+                </a>
+              ) : job.company}
+            </h4>
             <p className="mb-1 text-sm text-fg-muted italic">{job.role}</p>
             <p className="mb-3 text-sm text-fg">{job.description}</p>
 
             {job.project.name && (
               <div className="mb-3 rounded-lg border border-border bg-bg-card p-3">
-                <p className="text-sm font-semibold text-fg-heading">{job.project.name}</p>
+                <p className="text-sm font-semibold text-fg-heading">
+                  {'url' in job.project ? (
+                    <a href={job.project.url as string} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                      {job.project.name}
+                    </a>
+                  ) : job.project.name}
+                </p>
                 {job.project.summary && (
                   <p className="text-sm text-fg-muted">{job.project.summary}</p>
                 )}
